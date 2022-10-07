@@ -4,8 +4,12 @@ class NullTest {
 }
 
 fun main() {
-    var str1: String? = "Hello Kotlin"
-    str1 = null
+    var str1: String? = "Hello Kotlin" as? String
+
+    println(str1?.length)
+    println(str1!!.length)
+    println(str1!!.length)
+
 
     val length = str1?.length ?: -1
     val a = 1
