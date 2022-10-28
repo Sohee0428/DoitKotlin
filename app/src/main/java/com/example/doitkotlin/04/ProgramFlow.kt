@@ -100,6 +100,21 @@ fun main() {
     } finally {
         println("항상 호출됨")
     }
+
 }
 
 class InvalidNameException(message: String) : java.lang.Exception(message)
+
+open class Bird {
+    fun fly() {
+    }
+    open fun sing() {
+    }
+}
+
+//open class Lark() : Bird() {
+//    fun fly() {
+//    }
+//    final override fun sing() {
+//    }
+//}
