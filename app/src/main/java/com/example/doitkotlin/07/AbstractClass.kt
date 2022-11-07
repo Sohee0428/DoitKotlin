@@ -12,13 +12,16 @@ abstract class Vehicle(val name: String, val color: String, val weight: Double) 
     abstract fun start()
     abstract fun stop()
 
-    fun displaySpecs() {
+    open fun displaySpecs() {
         println("Name: $name, Color: $color, Weight: $weight, Year: $year, Max Speed: $maxSpeed")
     }
 }
 
 class MyCar(name: String, color: String, weight: Double, override var maxSpeed: Double) :
     Vehicle(name, color, weight) {
+    override fun displaySpecs() {
+
+    }
     override fun start() {
         println("Car Started")
     }
