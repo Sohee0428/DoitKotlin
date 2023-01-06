@@ -60,9 +60,10 @@ fun main() {
         |hello my name is sanghoon
     """.trimMargin()
 
-    println(text)
+    println(fruits.size)
 
     Array().test()
+
 
     val hello = "hello my name is sohee"
     println(hello.split(" "))
